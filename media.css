@@ -1,0 +1,58 @@
+/* Locally stored, replaceable property photography. */
+.hero-scene{background-image:linear-gradient(90deg,rgba(8,11,10,.54),rgba(8,11,10,.08)),url('/images/hero-residence.jpg');background-size:cover;background-position:center}
+.hero-sun,.hero-house{display:none}
+.tone-sunset{background-image:linear-gradient(180deg,rgba(13,12,10,.04),rgba(13,12,10,.38)),url('/images/residence-pool.jpg');background-size:cover;background-position:center}
+.tone-night{background-image:linear-gradient(180deg,rgba(7,12,15,.1),rgba(7,12,15,.5)),url('/images/penthouse-interior.jpg');background-size:cover;background-position:center}
+.tone-water{background-image:linear-gradient(180deg,rgba(9,20,20,.04),rgba(9,20,20,.4)),url('/images/residence-garden.jpg');background-size:cover;background-position:center}
+.tone-grove{background-image:linear-gradient(180deg,rgba(21,27,17,.04),rgba(21,27,17,.45)),url('/images/hero-residence.jpg');background-size:cover;background-position:center}
+.tone-clay{background-image:linear-gradient(180deg,rgba(34,24,17,.03),rgba(34,24,17,.45)),url('/images/residence-pool.jpg');background-size:cover;background-position:center}
+.tone-palm{background-image:linear-gradient(180deg,rgba(27,30,18,.05),rgba(27,30,18,.46)),url('/images/residence-garden.jpg');background-size:cover;background-position:center}
+.property-image,.story,.journal-image,.service-image,.portrait,.detail-hero,.contact-block,.destination{background-color:#3d3b35}
+.property-image:before,.story:before,.journal-image:before,.portrait:before,.detail-hero:after,.contact-block:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,rgba(0,0,0,.38));pointer-events:none}
+.property-image>*,.story>*{position:relative;z-index:1}
+@media(max-width:760px){.hero-scene{background-position:58% center}.detail-hero{background-position:center}.service-image,.portrait{background-position:center}}
+
+/* Art-directed crops: each composition keeps its architectural focal point visible. */
+.hero-scene{background-position:57% 52%}
+.tone-sunset{background-position:54% 76%}
+.tone-night{background-position:57% 55%}
+.tone-water{background-position:51% 60%}
+.tone-grove{background-position:59% 48%}
+.tone-clay{background-position:52% 72%}
+.tone-palm{background-position:48% 58%}
+
+.property-image{isolation:isolate}
+.property-image::before{z-index:0}
+.property-image span,.property-image .heart,.property-image em{z-index:2}
+.property--large .property-image{background-position:59% 51%}
+.feature-grid .property:nth-child(2) .property-image{background-position:62% 55%}
+.feature-grid .property:nth-child(3) .property-image{background-position:52% 64%}
+.listing-grid .property:nth-child(1) .property-image{background-position:60% 51%}
+.listing-grid .property:nth-child(2) .property-image{background-position:56% 54%}
+.listing-grid .property:nth-child(3) .property-image{background-position:52% 67%}
+.listing-grid .property:nth-child(4) .property-image{background-position:59% 48%}
+.listing-grid .property:nth-child(5) .property-image{background-position:54% 73%}
+.listing-grid .property:nth-child(6) .property-image{background-position:49% 58%}
+
+.story{background-position:center}
+.story:nth-child(1){background-position:51% 60%}
+.story:nth-child(2){background-position:58% 52%}
+.story:nth-child(3){background-position:59% 48%}
+.story:nth-child(4){background-position:52% 72%}
+.journal-image{background-position:center}
+.journal-grid article:nth-child(1) .journal-image{background-position:60% 51%}
+.journal-grid article:nth-child(2) .journal-image{background-position:52% 68%}
+.journal-grid article:nth-child(3) .journal-image{background-position:58% 52%}
+.gallery div:nth-child(1){background-position:59% 51%}
+.gallery div:nth-child(2){background-position:52% 70%}
+.gallery div:nth-child(3){background-position:57% 54%}
+.detail-hero{background-position:58% 51%}
+.service-image{background-position:58% 50%}
+.portrait{background-position:57% 53%}
+.contact-block{background-position:58% 52%}
+
+@media(max-width:760px){
+  .property-image,.property--large .property-image,.listing-grid .property-image{background-position:center!important}
+  .story{background-position:center!important}
+  .hero-scene,.detail-hero,.service-image,.portrait,.contact-block{background-position:center!important}
+}
